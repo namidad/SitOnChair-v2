@@ -98,23 +98,6 @@ document.querySelectorAll(".hamLi").forEach(function(el,index){
 
 
 
-        document.querySelectorAll(".transparentChair").forEach(function (el, index) {
-          if(index==0){
-            el.addEventListener("mouseover",function (){
-              document.querySelector(".clair p").classList.add("hidden");
-            });
-            el.addEventListener("mouseout", function () {
-              document.querySelector(".clair p").classList.remove("hidden");
-            });
-          } else {
-            el.addEventListener("mouseover",function (){
-              document.querySelector(".margarita p").classList.add("hidden");
-            });
-            el.addEventListener("mouseout", function () {
-              document.querySelector(".margarita p").classList.remove("hidden");
-            });
-          }
-        });
 
 
 
@@ -244,6 +227,23 @@ if(mqls[0].matches ){
     if(document.querySelector(".hamburger").classList.contains("hidden")) {
     document.querySelector(".hamLiSub").classList.add("hidden");
   }
+  });
+  document.querySelectorAll(".transparentChair").forEach(function (el, index) {
+    if(index==0){
+      el.addEventListener("mouseover",function (){
+        document.querySelector(".clair p").classList.add("hidden");
+      });
+      el.addEventListener("mouseout", function () {
+        document.querySelector(".clair p").classList.remove("hidden");
+      });
+    } else {
+      el.addEventListener("mouseover",function (){
+        document.querySelector(".margarita p").classList.add("hidden");
+      });
+      el.addEventListener("mouseout", function () {
+        document.querySelector(".margarita p").classList.remove("hidden");
+      });
+    }
   });
 
 
