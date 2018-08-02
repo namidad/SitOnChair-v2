@@ -198,17 +198,17 @@ if(mqls[0].matches ){
 
 
     document.querySelector(".secondMenu").addEventListener("mouseover", function(){
-if(document.querySelector(".hamburger").classList.contains("hidden")) {
+      if(!document.querySelector(".hamburger").classList.contains("hidden")) {
       document.querySelector(".hamLiSub").classList.remove("hidden");
     }
     });
 
     document.querySelector(".secondMenu").addEventListener("mouseout", function(){
-      if(document.querySelector(".hamburger").classList.contains("hidden")) {
+      if(!document.querySelector(".hamburger").classList.contains("hidden")) {
       document.querySelector(".hamLiSub").classList.add("hidden");
     }
     });
-  
+
 
 
 
@@ -239,15 +239,17 @@ if(document.querySelector(".hamburger").classList.contains("hidden")) {
   document.querySelector("#thirdSection .underlinedText").classList.remove("hidden");
   document.querySelector("#fourthSection .underlinedText").classList.remove("hidden");
   document.querySelector(".hamburger").classList.add("hidden");
-  if(document.querySelector(".hamburger").classList.contains("hidden")) {
-    document.querySelector(".secondMenu").addEventListener("mouseover", function(){
-      document.querySelector(".hamLiSub").classList.remove("hidden");
-    });
-
-    document.querySelector(".secondMenu").addEventListener("mouseout", function(){
-      document.querySelector(".hamLiSub").classList.add("hidden");
-    });
+  document.querySelector(".secondMenu").addEventListener("mouseover", function(){
+    if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+    document.querySelector(".hamLiSub").classList.remove("hidden");
   }
+  });
+
+  document.querySelector(".secondMenu").addEventListener("mouseout", function(){
+    if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+    document.querySelector(".hamLiSub").classList.add("hidden");
+  }
+  });
 
 
 
