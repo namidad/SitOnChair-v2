@@ -597,6 +597,51 @@ padding-bottom: 40px;
     flex-direction: row;
   }
 
+
+  .hamLiSub {
+    position: absolute;
+    list-style: none;
+    display: block;
+    padding-top: 8px;
+  }
+  .hamLiSub li{
+    position: relative;
+    left: -25px;
+    background: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hamLiSub li:first-of-type {
+    padding-top: 13px;
+  }
+
+  .hamLiSub li:last-of-type {
+    padding-bottom: 13px;
+  }
+
+  .hamLiSub a{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .hamLiSub::before{
+    content: "";
+    position: relative;
+    display: block;
+    top: 10px;
+    left: calc(40% - 35px);
+
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+  }
+
   header .logo {
     display: flex;
     justify-content: flex-start;
@@ -704,6 +749,7 @@ padding-bottom: 40px;
 
   footer {
     height: 60px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -815,10 +861,6 @@ header {
   cursor: pointer;
 }
 
-.secondMenu:hover {
-
-}
-
 .underlinedText {
   position: relative;
   padding-bottom: 80px;
@@ -841,60 +883,9 @@ header {
 
 
 
-.hamLiSub {
-  position: absolute;
-  list-style: none;
-  display: block;
-  padding-top: 8px;
-}
-.hamLiSub li{
-  position: relative;
-  left: -25px;
-  background: black;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.hamLiSub li:first-of-type {
-  padding-top: 13px;
-}
-
-.hamLiSub li:last-of-type {
-  padding-bottom: 13px;
-}
-
-.hamLiSub a{
-  color: white;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.hamLiSub::before{
-  content: "";
-  position: relative;
-  display: block;
-  top: 10px;
-  left: calc(40% - 35px);
-
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid black;
-}
 
 
 }
-
-
-
-
-
-
-
-
 
 
 .hidden {

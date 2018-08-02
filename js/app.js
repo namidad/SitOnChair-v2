@@ -11,6 +11,8 @@ function showMenu () {
 }
 
 
+
+
 document.querySelectorAll(".hamLi").forEach(function(el,index){
     if(index>0){
       el.addEventListener("click", showMenu);
@@ -113,13 +115,7 @@ document.querySelectorAll(".hamLi").forEach(function(el,index){
           }
         });
 
-        document.querySelector(".secondMenu").addEventListener("mouseover", function(){
-          document.querySelector(".hamLiSub").classList.remove("hidden");
-        });
 
-        document.querySelector(".secondMenu").addEventListener("mouseout", function(){
-          document.querySelector(".hamLiSub").classList.add("hidden");
-        });
 
 
 
@@ -190,9 +186,26 @@ if(mqls[0].matches ){
   document.querySelector("#thirdSection .underlinedText").classList.add("hidden");
   document.querySelector("#fourthSection .underlinedText").classList.add("hidden");
 
+  document.querySelector(".secondMenu").addEventListener("mouseover", function(){
+    document.querySelector(".hamLiSub").classList.remove("hidden");
+  });
+
+  document.querySelector(".secondMenu").addEventListener("mouseout", function(){
+    document.querySelector(".hamLiSub").classList.add("hidden");
+  });
+
+  document.querySelector(".secondMenu").addEventListener("mouseover", function(){
+    document.querySelector(".hamLiSub").classList.remove("hidden");
+  });
+
+  document.querySelector(".secondMenu").addEventListener("mouseout", function(){
+    document.querySelector(".hamLiSub").classList.add("hidden");
+  });
 
 
-} else{
+
+
+} else if (mqls[2].matches){
   var rArrow = document.querySelector(".rigthArrow"),
       lArrow = document.querySelector(".leftArrow");
   clearInterval(inter2);
@@ -218,9 +231,13 @@ if(mqls[0].matches ){
   document.querySelector("#thirdSection .underlinedText").classList.remove("hidden");
   document.querySelector("#fourthSection .underlinedText").classList.remove("hidden");
 
+  document.querySelector(".secondMenu").addEventListener("mouseover", function(){
+    document.querySelector(".hamLiSub").classList.remove("hidden");
+  });
 
-
-
+  document.querySelector(".secondMenu").addEventListener("mouseout", function(){
+    document.querySelector(".hamLiSub").classList.add("hidden");
+  });
 
 
 
