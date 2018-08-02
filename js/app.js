@@ -25,11 +25,6 @@ document.querySelectorAll(".hamLi").forEach(function(el,index){
     }
   });
 
-  document.querySelectorAll(".hamLiSub").forEach(function(el,){
-      el.addEventListener("click", function(){
-        el.addEventListener("click", showMenu);
-      });
-  });
 
   document.querySelector(".secondMenu").addEventListener("click", function(){
     document.querySelector(".hamLiSub").classList.toggle("hidden");
@@ -250,6 +245,8 @@ if(mqls[0].matches ){
     document.querySelector(".hamLiSub").classList.add("hidden");
   }
   });
+
+
 
 
 
