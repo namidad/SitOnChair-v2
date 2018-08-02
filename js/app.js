@@ -145,6 +145,10 @@ if(mqls[0].matches ){
   document.querySelector(".logos a").classList.add("hidden");
   document.querySelector(".hamburger").classList.remove("hidden");
 
+  document.querySelector(".card1").classList.remove("relativeCircle");
+  document.querySelector(".card2").classList.remove("relativeCircle");
+  document.querySelector(".card2").classList.remove("greenCirc");
+  document.querySelector(".card3").classList.remove("relativeCircle");
 
 
 
@@ -156,7 +160,10 @@ if(mqls[0].matches ){
   document.querySelector(".description button").classList.remove("hidden");
   document.querySelector(".margarita").classList.remove("hidden");
   document.querySelector(".card1").classList.remove("hidden");
+  document.querySelector(".card1").classList.add("relativeCircle");
   document.querySelector(".card2").classList.remove("hidden");
+  document.querySelector(".card2").classList.add("relativeCircle");
+  document.querySelector(".card2").classList.add("greenCirc");
   document.querySelector(".card3").classList.add("hidden");
   document.querySelectorAll(".nextPlan").forEach(function (e) {
     e.classList.add("hidden");
@@ -191,6 +198,8 @@ if(mqls[0].matches ){
 
 
 
+
+
 } else if (mqls[2].matches){
   var rArrow = document.querySelector(".rigthArrow"),
       lArrow = document.querySelector(".leftArrow");
@@ -202,8 +211,16 @@ if(mqls[0].matches ){
   document.querySelector(".description button").classList.remove("hidden");
   document.querySelector(".margarita").classList.remove("hidden");
   document.querySelector(".card1").classList.remove("hidden");
+  document.querySelector(".card1").classList.add("relativeCircle");
+
+
   document.querySelector(".card2").classList.remove("hidden");
+  document.querySelector(".card2").classList.add("relativeCircle");
+  document.querySelector(".card2").classList.add("greenCirc");
+
   document.querySelector(".card3").classList.add("hidden");
+  document.querySelector(".card3").classList.add("relativeCircle"); 
+
   document.querySelectorAll(".nextPlan").forEach(function (e) {
     e.classList.add("hidden");
   });
@@ -245,7 +262,6 @@ if(mqls[0].matches ){
       });
     }
   });
-
 
 
 
