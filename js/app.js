@@ -198,13 +198,13 @@ if(mqls[0].matches ){
 
 
     document.querySelector(".secondMenu").addEventListener("mouseover", function(){
-      if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+      if(document.querySelector(".hamburger").classList.contains("hidden")) {
       document.querySelector(".hamLiSub").classList.remove("hidden");
     }
     });
 
     document.querySelector(".secondMenu").addEventListener("mouseout", function(){
-      if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+      if(document.querySelector(".hamburger").classList.contains("hidden")) {
       document.querySelector(".hamLiSub").classList.add("hidden");
     }
     });
@@ -240,13 +240,13 @@ if(mqls[0].matches ){
   document.querySelector("#fourthSection .underlinedText").classList.remove("hidden");
   document.querySelector(".hamburger").classList.add("hidden");
   document.querySelector(".secondMenu").addEventListener("mouseover", function(){
-    if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+    if(document.querySelector(".hamburger").classList.contains("hidden")) {
     document.querySelector(".hamLiSub").classList.remove("hidden");
   }
   });
 
   document.querySelector(".secondMenu").addEventListener("mouseout", function(){
-    if(!document.querySelector(".hamburger").classList.contains("hidden")) {
+    if(document.querySelector(".hamburger").classList.contains("hidden")) {
     document.querySelector(".hamLiSub").classList.add("hidden");
   }
   });
